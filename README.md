@@ -15,24 +15,28 @@ Installation:
 
 1.  Clone Repository
 
-    ```git clone https://github.com/Fadhli170402/Scraping-Ebay.git
-
+    ```
+    git clone https://github.com/Fadhli170402/Scraping-Ebay.git
     ```
 
 2.  Install Dependencies
 
-    ```npm install
-
+    ```
+    npm install
     ```
 
 3.  Install Dependencies
 
-    ````cp .env.example .env
+    ```cp .env.example .env
+
+    ```
+
     ```masukan DEEPSEEK_API_KEY anda
 
-    ````
+    ```
 
 4.  Jalankan Program
+
     ```npm start
 
     ```
@@ -44,12 +48,13 @@ Setelah program berhasil dijalankan, Anda dapat menggunakan scraper dengan cara:
 
    ````Salin dan tempelkan URL berikut di address bar browser:
    ```http://localhost:3000/scrape?url=https://www.ebay.com/sch/i.html?_nkw=nike
-
    ````
 
 3. Hasil Scraping
+
    ````Scraper akan menampilkan hasil dalam format JSON yang berisi:
    ```product_name: Nama produk
    ```product_price: Harga produk
    ```product_description: Deskripsi lengkap produk
+
    ````
