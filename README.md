@@ -27,18 +27,18 @@ Installation:
 
 3.  Install Dependencies
 
-    ```cp .env.example .env
-
+    ```
+    cp .env.example .env
     ```
 
-    ```masukan DEEPSEEK_API_KEY anda
-
+    ```
+    masukan DEEPSEEK_API_KEY anda
     ```
 
 4.  Jalankan Program
 
-    ```npm start
-
+    ```
+    npm start
     ```
 
 Setelah program berhasil dijalankan, Anda dapat menggunakan scraper dengan cara:
@@ -46,15 +46,16 @@ Setelah program berhasil dijalankan, Anda dapat menggunakan scraper dengan cara:
 1. Buka Browser
 2. Jalankan Scraper
 
-   ````Salin dan tempelkan URL berikut di address bar browser:
-   ```http://localhost:3000/scrape?url=https://www.ebay.com/sch/i.html?_nkw=nike
-   ````
+   ```
+   Salin dan tempelkan URL berikut di address bar browser:
+   http://localhost:3000/scrape?url=https://www.ebay.com/sch/i.html?_nkw=nike
+   ```
 
 3. Hasil Scraping
 
-   ````Scraper akan menampilkan hasil dalam format JSON yang berisi:
-   ```product_name: Nama produk
-   ```product_price: Harga produk
-   ```product_description: Deskripsi lengkap produk
-
-   ````
+   ```
+   Scraper akan menampilkan hasil dalam format JSON yang berisi:
+   product_name: Nama produk
+   product_price: Harga produk
+   product_description: Deskripsi lengkap produk
+   ```
