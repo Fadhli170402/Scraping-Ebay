@@ -48,7 +48,7 @@ Setelah program berhasil dijalankan, Anda dapat menggunakan scraper dengan cara:
 1. Buka Browser
 2. Jalankan Scraper
 
-````
+```
 
 Salin dan tempelkan URL berikut di address bar browser:
 http://localhost:3000/scrape?url=https://www.ebay.com/sch/i.html?_nkw=nike
@@ -69,6 +69,3 @@ Scraper akan menampilkan hasil dalam format JSON yang berisi:
 },
 
 ```
-
-```
-````
