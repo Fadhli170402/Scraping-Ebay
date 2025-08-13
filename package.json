@@ -1,0 +1,33 @@
+{
+  "name": "test-mrscrapper3",
+  "version": "1.0.0",
+  "description": "API for scraping eBay product data with AI-enhanced description extraction",
+  "keywords": [
+    "eBay",
+    "scraper",
+    "api",
+    "nodejs",
+    "web-scraping"
+  ],
+  "license": "MIT",
+  "author": "Fadhli Adhliana",
+  "type": "commonjs",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "node test/test.js"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "cheerio": "^1.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "puppeteer": "^24.16.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "rate-limiter-flexible": "^7.2.0"
+  }
+}
