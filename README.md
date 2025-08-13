@@ -11,3 +11,5 @@
 Node.js >= 16.0.0
 
 Cara Install 
+1. Clone Reporsitory
+https://github.com/Fadhli170402/Scraping-Ebay.git
