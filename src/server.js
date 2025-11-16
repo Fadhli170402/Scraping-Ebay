@@ -82,5 +82,5 @@ app.use((req, res) => {
 app.listen(PORT, () => {
     console.log(' Server Scraping eBay API running on port', PORT);
     console.log(' API Documentation: http://localhost:${PORT}/');
-    console.log(' Example : http://localhost:3000/scraper?url=https://www.ebay.com/sch/i.html?_nkw=nike');
+    console.log(' Example : http://localhost:3000/scraper?url=https://www.ebay.com/sch/i.html?_nkw=nike&_pgn=1&max=1');
 })
