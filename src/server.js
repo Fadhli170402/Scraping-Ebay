@@ -47,7 +47,7 @@ app.get('/', (req, res) => {
             scrape: '/scraper?url=<ebay_search_url>',
             health: '/health',
         },
-        example: '/scraper?url=https://www.ebay.com/sch/i.html?_from=R40&_nkw=nike&_sacat=0&rt=nc&_pgn=1'
+        example: '/scraper?url=http://localhost:3000/scraper?url=https://www.ebay.com/sch/i.html?_nkw=nike&_pgn=1&max=1'
     });
 });
 

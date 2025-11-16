@@ -51,7 +51,7 @@ Setelah program berhasil dijalankan, Anda dapat menggunakan scraper dengan cara:
 ```
 
 Salin dan tempelkan URL berikut di address bar browser:
-http://localhost:3000/scrape?url=https://www.ebay.com/sch/i.html?_nkw=nike
+http://localhost:3000/scraper?url=https://www.ebay.com/sch/i.html?_nkw=nike&_pgn=1&max=1
 
 ```
 
@@ -60,12 +60,13 @@ http://localhost:3000/scrape?url=https://www.ebay.com/sch/i.html?_nkw=nike
 ```
 
 Scraper akan menampilkan hasil dalam format JSON yang berisi:
-"success": true,
-"data": [
 {
-"product_name": "NIKE Shox R4 HQ1988-600 University Red Black Metallic Silver Men's Size",
-"product_price": "US $141.40",
-"product_description": "Description\n\nAll my products are 100% Authentic.\n\nThis item follows Men’s sizing. Please refer to the \"US M\" size listed.\nKindly note that we do not accept returns or exchanges for size-related issues due to incorrect purchases.\n\nA remake of an iconic shoe from the early 2000s, the Nike Shox R4 carries over the futuristic design lines and high-performance cushioning from the original model. Nike Shox technology's cylindrical construction is employed in the heel. It distributes weight to maximize comfort while creating a bold style on the street.\n\n\n\n\n◇Features◇\n\n・Soft and durable synthetic and textile upper.\n\n・Nike Shox technology features a flexible cylinder construction for superior resilience. Recovers its shape under compression to provide exceptional cushioning.\n\n・Improved circular waffle outsole provides exceptional traction.\n\n・Laser-cut vents for enhanced breathability.\n\n\n\n\nPlease feel free to contact us if you have any question.\n\n\n Shipping\n\nWe ship using FedEx, DHL and Japan Post.\n\n Payment\n\nWe usually ship within 5〜10 business days of receiving cleared payment.\n\n\n\n\n International Buyers - Please Note:\n\nImport duties, taxes and charges are not included in the item price or shipping charges.These charges are the buyer’s responsibility.Please check with your country’s customs office to determine what these additional costs will be prior to bidding/buying. These charges are normally collected by the delivering freight (shipping) company or when you pick the item up do not confuse them for additional shipping charges. I do not mark merchandise values below value or mark items as \"gifts\" - US and International government regulations prohibit such behavior."
-},
+      "page": 1,
+      "url": "https://www.ebay.com/itm/127494494789?_skw=nike&epid=28076720590&itmmeta=01KA5D4Q2DVZS3EBSVW6SZMBPG&hash=item1daf439a45:g:L0QAAeSwGP9pF9KD&itmprp=enc%3AAQAKAAAAwFkggFvd1GGDu0w3yXCmi1dzPeTtsdrtm%2F6tm9%2FsCSGmj2SECbmNdYGZY%2FdYHN3IUaN8HRZaBMWPu469gA65l7TstEoHNl%2B%2FI%2B91YKHGCIZGm4EoHEWaAQRFc8g8JM%2BlpcSQ0Eyqhup84rzqL2v9hMZuE3vL0a%2BNc0gtn0Sv2SvXI9A40z%2BBg8XrdPRyeGnnROkd8THcUthIubf0uUF0iGtzM97R151P79pmcDGet8%2FQ3oMUG7aqMnY9y252gA1LxQ%3D%3D%7Ctkp%3ABk9SR8rxkq3RZg",
+      "product_name": "Nike Air Jordan Retro 1 Low OG Chicago (2025) HQ6998-600 Sizes 7.5-14 Men’s New",
+      "product_price": "IDR2,839,688.79",
+      "product_description": "The product is a 2025 release of the Nike Air Jordan Retro 1 Low OG Chicago in red and white colors, designed for men in sizes 7.5-14. This sneaker is a part of the Air Jordan 1 Low model and features a low top shaft style, making it suitable for athletic use. The Retro theme adds a classic touch to the Jordan 1 Low OG silhouette, showcasing the iconic sneaker design that Nike is known for.",
+      "extracted_by": "AI-DEEPSEEK"
+    },
 
 ```
