@@ -10,7 +10,7 @@ const DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions";
 
 async function extractWithDeepseek(page) {
     try {
-        // ========== 1. EXTRACT TITLE & PRICE SNIPPETS ==========
+        // EXTRACT TITLE & PRICE SNIPPETS 
         const basicData = await page.evaluate(() => {
             const getText = (selectors) => {
                 for (const sel of selectors) {
@@ -47,11 +47,11 @@ async function extractWithDeepseek(page) {
             };
         });
 
-        // ========== 2. EXTRACT DESCRIPTION (HANDLE IFRAME & LAZY LOAD) ==========
+        // EXTRACT DESCRIPTION (HANDLE IFRAME & LAZY LOAD)
         let product_description = '-';
         
         try {
-            // Coba scroll ke bagian description untuk trigger lazy load
+            // scroll ke bagian description untuk trigger lazy load
             await page.evaluate(() => {
                 const descSection = document.querySelector('#viTabs_0_is, .d-item-description, [data-testid="x-item-description"]');
                 if (descSection) {
@@ -106,9 +106,6 @@ async function extractWithDeepseek(page) {
             product_description = '-';
         }
 
-        // ========== 3. JIKA DESCRIPTION BERHASIL, SKIP AI UNTUK DESC ==========
-        // AI hanya untuk Title & Price (lebih akurat karena snippet kecil)
-        
         if (basicData.titleHTML === '-' && basicData.priceHTML === '-') {
             return {
                 product_name: "-",
@@ -117,7 +114,7 @@ async function extractWithDeepseek(page) {
             };
         }
 
-        // ========== 4. PROMPT UNTUK TITLE & PRICE SAJA ==========
+        // PROMPT 
         const prompt = `
 You are an AI specialized in extracting product data from eBay HTML snippets.
 
@@ -223,7 +220,7 @@ async function scrapeEbay(searchUrl, maxPage = 1) {
 
     const allResults = [];
 
-    // helper: build final URL with _pgn param (append if missing)
+    // final URL with _pgn param
     function buildPageUrl(baseUrl, pageNum) {
         if (/_pgn=\d+/i.test(baseUrl)) {
             return baseUrl.replace(/_pgn=\d+/i, `_pgn=${pageNum}`);
@@ -283,7 +280,6 @@ async function scrapeEbay(searchUrl, maxPage = 1) {
                 const html = await prodPage.content();
 
                 // Coba ambil dengan AI
-                // let data = await extractWithDeepseek(html);
                 let data = await extractWithDeepseek(prodPage);
                 let extractedBy = "AI-DEEPSEEK";
 
